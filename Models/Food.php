@@ -2,12 +2,12 @@
 
 class Food extends Product {
 
-    public $quantity;
+    public $type;
 
-    function __construct($name, $price, $description, $quantity){
+    function __construct($name, $price, $description, $type){
         
         parent::__construct($name, $price, $description);
 
-        $this->quantity = $quantity;
+        $this->type = $type;
     }
 }

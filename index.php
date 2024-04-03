@@ -19,14 +19,26 @@ error_reporting(E_ALL);
 </head>
 <body>
 
-    <ul>
-        <?php 
-        foreach($products as $product){
-            echo "<li> " . $product->name . ", " . $product->price . ", " . $product->description . ", " . $product->category->getCategory() . " </li>";
-        }
-        
-        ?>
-    </ul>
+    <div class="container">
+        <div class="row">           
+            <?php 
+            foreach($products as $product){
+                echo "<div class='card'> 
+                <h4>" . $product->name . "</h4>
+                <p>" . $product->price . "</p>
+                <p>" . $product->description . "</p>
+                <p>" . $product->category->getCategory() . "</p>"; 
+                if($product instanceof Food){
+                    echo "<strong> " . $product->type . "</strong>";
+                } elseif ($product instanceof Toy) {
+                    echo "<strong> " . $product->type . "</strong>";
+                }
+                echo "</div>";
+            }
+            
+            ?>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
