@@ -11,6 +11,6 @@ class Category {
     }
 
     public function getCategory() {
-        return $this->type . ' ' . $this->icon . '.';
+        return $this->type . ' ' . $this->icon . '';
     }
 }
