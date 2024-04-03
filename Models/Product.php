@@ -7,9 +7,9 @@ class Product {
     public $description;
 
 
-    public function __construct($_name, $_price, $_description) {
-        $this->name = $_name;
-        $this->price = $_price;
-        $this->description = $_description;
+    public function __construct($name, $price, $description) {
+        $this->name = $name;
+        $this->price = $price;
+        $this->description = $description;
     }
 }
