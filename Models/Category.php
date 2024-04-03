@@ -9,4 +9,8 @@ class Category {
         $this->type = $type;
         $this->icon = $icon;
     }
+
+    public function getCategory() {
+        return $this->type . ' ' . $this->icon . '.';
+    }
 }
