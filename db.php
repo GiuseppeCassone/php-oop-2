@@ -22,28 +22,30 @@
     $product4Category = new Category("Gatto", "<i class='fa-solid fa-cat'></i>");
     $product4->category = $product4Category;
 
-    $product5 = new Kennel("Fuss Dog", 50.99, "Cuccia in legno per il tuo cane", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Cuccia", "Legno");
+    $product5 = new Kennel("Fuss Dog", 50.99, "Cuccia in legno per il tuo cane", "https://www.original-legno.com/wp-content/uploads/2021/06/Oasi_Ombra_con_Veranda_in_2_misure.webp", "Cuccia", "Legno");
     $product5Category = new Category("Cani", "<i class='fa-solid fa-dog'></i>");
     $product5->category = $product5Category;
-
-    $error = null;
     
-    try {
-
-        $product6 = new Kennel("Good Pet", " ", "Cuccia morbida e confortevole per il tuo gatto", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Cuccia", "Vimini");
-        $product6Category = new Category("Gatto", "<i class='fa-solid fa-cat'></i>");
-        $product6->category = $product6Category;
-        
-    } catch (Exception $e) {
-        $error = "Errore: " . $e->getMessage();
-    }
-
     $products = [
         $product1,
         $product2,
         $product3,
         $product4,
         $product5,
-        $product6
-    ]
+        // $product6
+    ];
+
+    $error = null;
+    
+    try {
+
+        $product6 = new Kennel("Good Pet", " ", "Cuccia morbida e confortevole per il tuo gatto", "https://cdn.manomano.com/images/images_products/474999/P/17374209_1.jpg", "Cuccia", "Vimini");
+        $product6Category = new Category("Gatto", "<i class='fa-solid fa-cat'></i>");
+        $product6->category = $product6Category;
+        array_push($products, $product6);
+        
+    } catch (Exception $e) {
+        $error = "Errore: " . $e->getMessage();
+    }
+
 ?>

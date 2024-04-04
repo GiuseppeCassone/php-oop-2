@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: blueviolet;
+}
+
 .row{
     gap: 20px;
 }
@@ -11,6 +15,7 @@
 .card{
     width: calc(100% / 2 - 20px);
 }
+
 
 .card-body{
     background-color: salmon;
