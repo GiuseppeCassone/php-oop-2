@@ -24,6 +24,11 @@ error_reporting(E_ALL);
         <h1 class="text-center text-white">SHOP PRODOTTI PER CANI E GATTI</h1>
         <div class="row p-5">           
             <?php 
+
+            if ($error) {
+                echo "<div class='alert alert-danger' role='alert'><strong> " . $error . "</strong></div>";
+            }
+
             foreach($products as $product){
                 echo "<div class='card shadow-lg p-0'>
                             <img src=" . $product->image . " alt=' . $product->name . '>
