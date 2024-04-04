@@ -36,6 +36,8 @@ error_reporting(E_ALL);
                                     echo "<strong>Tipo: " . $product->type . "</strong>";
                                 } elseif ($product instanceof Toy) {
                                     echo "<strong>Tipo: " . $product->type . "</strong>";
+                                }elseif ($product instanceof Kennel) {
+                                    echo "<strong>Tipo: " . $product->type . "</strong>";
                                 }
                 echo "      </div>
                        </div>";
