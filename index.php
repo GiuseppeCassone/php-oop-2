@@ -32,12 +32,19 @@ error_reporting(E_ALL);
                                 <p>Prezzo: " . $product->price . "</p>
                                 <p>Descrizione: " . $product->description . "</p>
                                 <p>Categoria: " . $product->category->getCategory() . "</p>"; 
+
                                 if($product instanceof Food){
                                     echo "<strong>Tipo: " . $product->type . "</strong>";
+                                    echo "<p>Peso: " . $product->weight . "</p>";
+
                                 } elseif ($product instanceof Toy) {
                                     echo "<strong>Tipo: " . $product->type . "</strong>";
+                                    echo "<p>Materiale: " . $product->materials . "</p>";
+
                                 }elseif ($product instanceof Kennel) {
                                     echo "<strong>Tipo: " . $product->type . "</strong>";
+                                    echo "<p>Materiale: " . $product->materials . "</p>";
+
                                 }
                 echo "      </div>
                        </div>";

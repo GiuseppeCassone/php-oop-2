@@ -14,19 +14,19 @@
     $product2Category = new Category("Gatto", "<i class='fa-solid fa-cat'></i>");
     $product2->category = $product2Category;
 
-    $product3 = new Toy("Friskies", "5.99", "Pallina resistente per il tuo cane", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Giochi");
+    $product3 = new Toy("Friskies", "5.99", "Pallina resistente per il tuo cane", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Giochi", "Plastica");
     $product3Category = new Category("Cani", "<i class='fa-solid fa-dog'></i>");
     $product3->category = $product3Category;
 
-    $product4 = new Toy("Friskies", "3.99", "Giocattolo soffice per il tuo gatto", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Giochi");
+    $product4 = new Toy("Friskies", "3.99", "Giocattolo soffice per il tuo gatto", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Giochi", "Stoffa");
     $product4Category = new Category("Gatto", "<i class='fa-solid fa-cat'></i>");
     $product4->category = $product4Category;
 
-    $product5 = new Kennel("Fuss Dog", "50.99", "Cuccia in legno per il tuo cane", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Cuccia");
+    $product5 = new Kennel("Fuss Dog", "50.99", "Cuccia in legno per il tuo cane", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Cuccia", "Legno");
     $product5Category = new Category("Cani", "<i class='fa-solid fa-dog'></i>");
     $product5->category = $product5Category;
 
-    $product6 = new Kennel("Good Pet", "30.99", "Cuccia morbida e confortevole per il tuo gatto", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Cuccia");
+    $product6 = new Kennel("Good Pet", "30.99", "Cuccia morbida e confortevole per il tuo gatto", "https://www.lifestyleblog.it/wp-content/uploads/2013/09/Toys.jpg", "Cuccia", "Vimini");
     $product6Category = new Category("Gatto", "<i class='fa-solid fa-cat'></i>");
     $product6->category = $product6Category;
 
